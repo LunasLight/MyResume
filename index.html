@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="bg-purple-950 text-white font-sans">
+    <img src="1.png" alt="" class="absolute inset-0 w-full h-full object-cover opacity-5">
+    <div class="container mx-auto flex h-screen">
+        <div class="flex-1 overflow-x-hidden mt-6">
+            <div class="flex justify-between py-2 px-4">
+                <div class="text-5xl font-bold">
+                    PORTFOLIO
+                </div>
+                <div class="font-bold">
+                    Email : songkrankhammoon@gmail.com
+                </div>
+            </div>
+            <section id="about" class="p-4">
+                <h2 class="text-2xl font-bold">About Me</h2>
+                <div class="mt-16"></div>
+                <div class="grid grid-cols-2">
+                    <div>
+                        <div class="text-xl mt-2 mb-2">Programer</div>
+                        <div class="text-4xl font-bold">Songkran Khammoon</div>
+                        <div class="text-2xl font-bold">(สงกรานต์ คำมูล)</div>
+                        <div class="mt-16"></div>
+                        <div>
+                            <p class="text-l">Songkran Khammoon(สงกรานต์ คำมูล) อายุ <span id="age"
+                                    class="font-bold"></span> หลักสูตรวิทยาการคอมพิวเตอร์ คณะเทคโนโลยีดิจิทัล
+                                มหาวิทยาลัยราชภัฏเชียงราย</p>
+                        </div>
+                    </div>
+                    <div class="grid place-content-center">
+                        <img src="My1.jpg" alt="Your Name" class="w-64 h-64 rounded mb-4 md:mr-8 md:mb-0">
+                    </div>
+                </div>
+
+            </section>
+            <section id="skills" class="p-4 hidden">
+                <h2 class="text-2xl font-bold">Skills</h2>
+                <div class="mt-16"></div>
+                <div class="grid grid-cols-3 list-disc list-inside">
+                    <li class="text-lg mb-2">PHP</li>
+                    <li class="text-lg mb-2">React</li>
+                    <li class="text-lg mb-2">C#</li>
+                    <li class="text-lg mb-2">Java</li>
+                    <li class="text-lg mb-2">CSS</li>
+                    <li class="text-lg mb-2">Unity</li>
+                    <li class="text-lg mb-2">Figma</li>
+                    <li class="text-lg mb-2">JavaScript</li>
+                    <li class="text-lg mb-2">Python</li>
+                    <li class="text-lg mb-2">MySQL</li>
+                    <li class="text-lg mb-2">Blender</li>
+                    <li class="text-lg mb-2">Flutter</li>
+                    <li class="text-lg mb-2">IoT</li>
+                    <li class="text-lg mb-2">Git</li>
+                    <li class="text-lg mb-2">Vue</li>
+                    <li class="text-lg mb-2">Vuetify</li>
+                </div>
+            </section>
+            <section id="projects" class="p-4 hidden">
+                <h2 class="text-2xl font-bold">Projects</h2>
+                <div class="mt-16"></div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                    <div class="bg-white/25 rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-semibold mb-2">Project 1</h3>
+                        <p>Description of project 1...</p>
+                    </div>
+                    <div class="bg-white/25 rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-semibold mb-2">Project 2</h3>
+                        <p>Description of project 2...</p>
+                    </div>
+                    <div class="bg-white/25 rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-semibold mb-2">Project 3</h3>
+                        <p>Description of project 3...</p>
+                    </div>
+                </div>
+            </section>
+            <!-- <section id="contact" class="p-4 hidden">
+                <h2 class="text-2xl font-bold">Contact</h2>
+                <div class="mt-16"></div>
+                <p><i class="fa fa-envelope" style="font-size:24px"></i> songkrankhammoon@gmail.com</p>
+            </section> -->
+        </div>
+    </div>
+    <!-- <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p></p>
+        </div>
+    </footer> -->
+    <div class="sidebar w-1/4 fixed inset-y-0 right-0 flex flex-col justify-center">
+        <nav class="py-4">
+            <ul>
+                <li><a href="#about"
+                        class="block py-2 px-4 text-right transition duration-150 ease-in-out opacity-80 hover:opacity-100 text-xl hover:text-3xl hover:font-bold">About
+                        Me</a></li>
+                <li><a href="#skills"
+                        class="block py-2 px-4 text-right transition duration-150 ease-in-out opacity-80 hover:opacity-100 text-xl hover:text-3xl hover:font-bold">Skills</a>
+                </li>
+                <li><a href="#projects"
+                        class="block py-2 px-4 text-right transition duration-150 ease-in-out opacity-80 hover:opacity-100 text-xl hover:text-3xl hover:font-bold">Projects</a>
+                </li>
+                <!-- <li><a href="#contact"
+                        class="block py-2 px-4 text-right transition duration-150 ease-in-out opacity-80 hover:opacity-100 text-xl hover:text-3xl hover:font-bold">Contact</a>
+                </li> -->
+            </ul>
+        </nav>
+    </div>
+</body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const sections = document.querySelectorAll("section");
+        let currentIndex = 0;
+
+        // Initially hide all sections except the first one
+        sections.forEach((section, index) => {
+            if (index !== currentIndex) {
+                section.style.display = "none";
+            }
+        });
+
+        // Function to show the current section
+        const showCurrentSection = () => {
+            sections.forEach((section, index) => {
+                if (index === currentIndex) {
+                    section.style.display = "block";
+                } else {
+                    section.style.display = "none";
+                }
+            });
+        };
+
+        // Event listener for navigation links
+        document.querySelectorAll("nav a").forEach((link, index) => {
+            link.addEventListener("click", function (event) {
+                event.preventDefault();
+                currentIndex = index;
+                showCurrentSection();
+                // Smooth scroll to the section
+                document.querySelector(link.getAttribute("href")).scrollIntoView({
+                    behavior: "smooth"
+                });
+            });
+        });
+    });
+
+    var birthYear = 2002;
+    var currentYear = new Date().getFullYear();
+    var age = currentYear - birthYear;
+    document.getElementById("age").innerText = age;
+</script>
+
+</html>
